@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerGetStarted{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 600PX;
+    /* background: white; */
+    z-index: 999;
+
+}
+.containerGetStarted img{
+    height: 600px;
+    width: 100%;
+    z-index: -2;
+}
+
+/* .containerEdt {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-top: 10rem;
+    
+} */
+
+
+
+
+
+

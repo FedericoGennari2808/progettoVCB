@@ -1,0 +1,33 @@
+.container_users div img {
+    height: 200px;
+}
+.container_users ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container_users li {
+    background: radial-gradient(circle at 30% -100%, #dfdfdf 25%, rgb(0, 0, 0) 85%, rgba(99, 27, 222, 0.553) 100%);;
+   color: rgba(255, 255, 255, 0.639);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.517);
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+    z-index: 999;
+   
+}
+.container_users h4 {
+    font-size: 16px;
+}
+.scrollable-div {
+    background-color: rgba(0, 0, 0, 0.434);
+    overflow: auto;
+    margin: 2px;
+    text-align: center;
+    padding: 20px;
+  }

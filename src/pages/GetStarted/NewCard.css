@@ -1,0 +1,140 @@
+
+
+.modalNAContainer {
+    max-width: 800px;
+    width: 100%;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 1;
+
+    background-color: white;
+    box-shadow: 0px 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    font-family: var(--font-family);
+}
+
+.inputTextNA form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2px;
+}
+.inputTextNA label{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+.modalRightNA {
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+    
+}
+
+.closeBtnNA {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.contentNA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 2rem ;
+    background: var(--gradient-text);
+    font-family: var(--font-family);
+
+}
+
+.btnContainerNA {
+    display: flex;
+    padding: 1rem 1rem;
+}
+.btnContainerNA button {
+    width: 100%;
+    margin: .5rem;
+    padding: 16px 0;
+    border: none;
+    color: white;
+}
+.btnPrimaryNA {
+    background-color: #ff4920;
+    border-radius: 5px;
+}
+
+.boldNA {
+    font-weight: 600;
+}
+
+.modalBtnNA{
+    width: 200px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 10px 10px;
+    background-color: #ff4920;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+
+}
+@media screen and (max-width: 550px) {
+    .modalNAContainer {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100vh;
+    }
+    img {
+        width: 100%;
+    }
+    .closeBtnNA {
+        color: white;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .overlayNA {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .overlayNA {
+        flex-direction: column;
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .overlayNA {
+        margin: 1rem 0;
+        min-width: 100%;
+        padding: 2rem;
+        display: none;
+        display: block;
+
+    }
+}

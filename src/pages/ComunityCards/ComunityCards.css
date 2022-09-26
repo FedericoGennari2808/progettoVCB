@@ -1,0 +1,117 @@
+.container_ComunityCards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-footer);
+}
+
+.container_ComunityCards-image {
+    width: 100%;
+    height: 100%;
+    background: var(--color-footer);
+}
+
+.container_ComunityCards-image img {
+    width: 100%;
+    height: 300px;
+}
+
+.container_ComunityCards-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 160px;
+    
+}
+
+.container_ComunityCards-content p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 5px;
+    color: #FFFFFF;
+    
+}
+
+.container_ComunityCards-content h3 {
+    font-family: var(--font-family);
+font-weight: 800;
+font-size: 22px;
+line-height: 10px;
+color: #FFFFFF;
+margin-bottom: 5rem;
+cursor: pointer;
+}
+.container_ComunityCards-content a {
+color: white;
+background: rgba(52, 1, 134, 0.684) ;
+border: 5px solid  rgba(52, 1, 134, 0.684);
+border-radius: 5px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+}
+
+.container_ComunityCards-content p:last-child {
+    cursor: pointer;
+    font-size: 16px;
+
+    
+}
+
+@media screen and (max-width:1500px) {
+    .container_ComunityCards-content h3 {
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container_ComunityCards-content p {
+        font-size: 14px;
+        line-height: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:770px) {
+    .container_ComunityCards-content h3 {
+        font-size: 12px;
+        line-height: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container_ComunityCards-content p {
+        font-size: 12px;
+        line-height: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_ComunityCards-image img {
+        width: 100%;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width:550px) {
+    .container_ComunityCards-content h3 {
+        font-size: 12px;
+        line-height: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container_ComunityCards-content p {
+        font-size: 12px;
+        line-height: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container_ComunityCards-content{
+        height: 100px;
+    }
+
+    .container_ComunityCards-image img {
+        width: 100%;
+        height: 150px;
+    }
+}
